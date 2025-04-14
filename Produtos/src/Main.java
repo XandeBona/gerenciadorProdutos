@@ -53,9 +53,17 @@ public class Main {
                 listaProdutos.add(novoNomeProduto);
             }
 
+            //Para obrigar o usuário a escolher uma opção válida
+            if (escolha > 4) {
+                System.out.println("Faça uma escolha válida!");
+            }
+
             System.out.print("Escolha uma opção: ");
             escolha = sc.nextInt();
         }
+
+        //Finaliza o programa
+        System.out.println("Programa encerrado!");
 
         sc.close();
     }
