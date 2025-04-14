@@ -33,6 +33,15 @@ public class Main {
                 System.out.println();
             }
 
+            //Remove produto da lista
+            if (escolha == 3) {
+                System.out.print("Qual produto você deseja remover? ");
+                sc.nextLine();
+                String nomeProduto = sc.nextLine();
+                listaProdutos.remove(nomeProduto);
+                System.out.println("O produto foi removido com sucesso!");
+            }
+
 
             System.out.print("Escolha uma opção: ");
             escolha = sc.nextInt();
