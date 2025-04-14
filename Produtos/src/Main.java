@@ -16,6 +16,20 @@ public class Main {
         System.out.print("Escolha uma opção: ");
         int escolha = sc.nextInt();
 
+        while (escolha != 0) {
+            if (escolha == 1) {
+                System.out.print("Digite o nome do Produto: ");
+                sc.nextLine();
+                String produto = sc.nextLine();
+                listaProdutos.add(produto);
+            }
 
+            System.out.print("Escolha uma opção: ");
+            escolha = sc.nextInt();
+        }
+
+        System.out.println(listaProdutos);
+
+        sc.close();
     }
 }
