@@ -26,7 +26,7 @@ public class Main {
             }
 
             //Listar produtos da lista
-            if (escolha == 2) {
+            else if (escolha == 2) {
                 System.out.println();
                 System.out.println("===== PRODUTOS =====");
                 System.out.println(listaProdutos);
@@ -34,8 +34,8 @@ public class Main {
             }
 
             //Remove produto da lista
-            if (escolha == 3) {
-                System.out.print("Qual produto você deseja remover? ");
+            else if (escolha == 3) {
+                System.out.println("Qual produto você deseja remover? ");
                 sc.nextLine();
                 String nomeProduto = sc.nextLine();
                 listaProdutos.remove(nomeProduto);
@@ -43,7 +43,7 @@ public class Main {
             }
 
             //Altera o produto
-            if (escolha == 4) {
+            else if (escolha == 4) {
                 System.out.println("Qual produto você deseja alterar? ");
                 sc.nextLine();
                 String nomeProduto = sc.nextLine();
@@ -54,7 +54,7 @@ public class Main {
             }
 
             //Para obrigar o usuário a escolher uma opção válida
-            if (escolha > 4) {
+            else {
                 System.out.println("Faça uma escolha válida!");
             }
 
