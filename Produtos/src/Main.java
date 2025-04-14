@@ -42,6 +42,16 @@ public class Main {
                 System.out.println("O produto foi removido com sucesso!");
             }
 
+            //Altera o produto
+            if (escolha == 4) {
+                System.out.println("Qual produto você deseja alterar? ");
+                sc.nextLine();
+                String nomeProduto = sc.nextLine();
+                listaProdutos.remove(nomeProduto);
+                System.out.println("Informe o novo nome para este produto: ");
+                String novoNomeProduto = sc.nextLine();
+                listaProdutos.add(novoNomeProduto);
+            }
 
             System.out.print("Escolha uma opção: ");
             escolha = sc.nextInt();
